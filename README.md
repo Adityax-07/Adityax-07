@@ -12,6 +12,10 @@
 </p>
  
 <img src="https://komarev.com/ghpvc/?username=Adityax-07&style=for-the-badge&color=00B4D8&label=PROFILE+VIEWS"/>
+
+<br/>
+
+<img src="./knight.gif" width="300" alt="knight"/>
  
 </div>
  
