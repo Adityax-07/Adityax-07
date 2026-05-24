@@ -16,7 +16,7 @@
 <img src="https://komarev.com/ghpvc/?username=Adityax-07&style=for-the-badge&color=00B4D8&label=PROFILE+VIEWS"/>
 
 </td>
-<td valign="center" width="45%" align="center">
+<td valign="center" width="45%" align="center" style="min-height:700px; height:700px;">
 
 <img src="./knight.gif" width="100%" alt="knight"/>
 
