@@ -1,23 +1,28 @@
-<div align="center">
- 
+<table>
+<tr>
+<td valign="center" width="60%">
+
 # Aditya Bisht
- 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00B4D8&center=true&vCenter=true&width=700&lines=AI+%26+ML+Engineer+%7C+LLM+Systems+Builder;RAG+Architect+%7C+Agentic+AI+Developer;Fine-tuning+%7C+LangChain+%7C+LangGraph+%7C+FastAPI;Building+Intelligent+Systems+at+Scale)](https://git.io/typing-svg)
- 
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00B4D8&center=false&vCenter=true&width=700&lines=AI+%26+ML+Engineer+%7C+LLM+Systems+Builder;RAG+Architect+%7C+Agentic+AI+Developer;Fine-tuning+%7C+LangChain+%7C+LangGraph+%7C+FastAPI;Building+Intelligent+Systems+at+Scale)](https://git.io/typing-svg)
+
 <p>
   <a href="https://github.com/Adityax-07"><img src="https://img.shields.io/badge/GitHub-Adityax--07-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
   <a href="https://linkedin.com/in/aditya-bisht"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="mailto:aaditya85677@gmail.com"><img src="https://img.shields.io/badge/Email-aaditya85677%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://leetcode.com/"><img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/></a>
 </p>
- 
+
 <img src="https://komarev.com/ghpvc/?username=Adityax-07&style=for-the-badge&color=00B4D8&label=PROFILE+VIEWS"/>
 
-<br/>
+</td>
+<td valign="center" width="40%" align="center">
 
-<img src="./knight.gif" width="300" alt="knight"/>
- 
-</div>
+<img src="./knight.gif" width="100%" alt="knight"/>
+
+</td>
+</tr>
+</table>
  
 ---
  
