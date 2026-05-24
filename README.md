@@ -1,10 +1,12 @@
 <table>
 <tr>
-<td valign="center" width="55%">
+<td valign="top" width="45%">
 
-# Aditya Bisht
+<img src="./banner.svg" width="100%"/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00B4D8&center=false&vCenter=true&width=700&lines=AI+%26+ML+Engineer+%7C+LLM+Systems+Builder;RAG+Architect+%7C+Agentic+AI+Developer;Fine-tuning+%7C+LangChain+%7C+LangGraph+%7C+FastAPI;Building+Intelligent+Systems+at+Scale)](https://git.io/typing-svg)
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&pause=1000&color=00B4D8&center=false&vCenter=true&width=440&lines=RAG+Architect+%7C+Agentic+AI+Developer;Fine-tuning+%7C+LangChain+%7C+LangGraph+%7C+FastAPI;Building+Intelligent+Systems+at+Scale)](https://git.io/typing-svg)
 
 <p>
   <a href="https://github.com/Adityax-07"><img src="https://img.shields.io/badge/GitHub-Adityax--07-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
@@ -16,7 +18,7 @@
 <img src="https://komarev.com/ghpvc/?username=Adityax-07&style=for-the-badge&color=00B4D8&label=PROFILE+VIEWS"/>
 
 </td>
-<td valign="center" width="45%" align="center" style="min-height:700px; height:700px;">
+<td valign="top" width="55%" align="center">
 
 <img src="./knight.gif" width="100%" alt="knight"/>
 
