@@ -4,10 +4,6 @@
 
 <img src="./banner.svg" width="100%"/>
 
-<br/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&pause=1000&color=00B4D8&center=false&vCenter=true&width=440&lines=RAG+Architect+%7C+Agentic+AI+Developer;Fine-tuning+%7C+LangChain+%7C+LangGraph+%7C+FastAPI;Building+Intelligent+Systems+at+Scale)](https://git.io/typing-svg)
-
 <p>
   <a href="https://github.com/Adityax-07"><img src="https://img.shields.io/badge/GitHub-Adityax--07-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
   <a href="https://linkedin.com/in/aditya-bisht"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>

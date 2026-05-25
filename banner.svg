@@ -1,90 +1,35 @@
-<svg width="500" height="310" viewBox="0 0 500 310" xmlns="http://www.w3.org/2000/svg">
+<svg width="480" height="190" viewBox="0 0 480 190" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00B4D8"/>
       <stop offset="100%" stop-color="#7B2FBE"/>
     </linearGradient>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0D1117"/>
-      <stop offset="100%" stop-color="#161B22"/>
-    </linearGradient>
-    <linearGradient id="accentLine" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00B4D8"/>
-      <stop offset="100%" stop-color="#7B2FBE"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="18" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="500" height="310" fill="url(#bgGrad)" rx="14"/>
+  <!-- Background blends with GitHub dark (#0D1117) -->
+  <rect width="480" height="190" fill="#0D1117"/>
 
-  <!-- Glow blobs -->
-  <ellipse cx="420" cy="60" rx="100" ry="80" fill="#00B4D8" opacity="0.07"/>
-  <ellipse cx="80" cy="270" rx="90" ry="70" fill="#7B2FBE" opacity="0.08"/>
-
-  <!-- Dot grid top-right -->
-  <g fill="#21262D">
-    <circle cx="390" cy="18" r="1.5"/><circle cx="410" cy="18" r="1.5"/><circle cx="430" cy="18" r="1.5"/><circle cx="450" cy="18" r="1.5"/><circle cx="470" cy="18" r="1.5"/>
-    <circle cx="390" cy="38" r="1.5"/><circle cx="410" cy="38" r="1.5"/><circle cx="430" cy="38" r="1.5"/><circle cx="450" cy="38" r="1.5"/><circle cx="470" cy="38" r="1.5"/>
-    <circle cx="390" cy="58" r="1.5"/><circle cx="410" cy="58" r="1.5"/><circle cx="430" cy="58" r="1.5"/><circle cx="450" cy="58" r="1.5"/><circle cx="470" cy="58" r="1.5"/>
-    <circle cx="390" cy="78" r="1.5"/><circle cx="410" cy="78" r="1.5"/><circle cx="430" cy="78" r="1.5"/><circle cx="450" cy="78" r="1.5"/><circle cx="470" cy="78" r="1.5"/>
-  </g>
-
-  <!-- Left accent bar -->
-  <rect x="22" y="22" width="4" height="72" fill="url(#accentLine)" rx="2"/>
+  <!-- Faint glow -->
+  <ellipse cx="200" cy="75" rx="220" ry="65" fill="#00B4D8" opacity="0.04"/>
 
   <!-- Name -->
-  <text x="38" y="68" font-family="'Segoe UI', Arial, sans-serif" font-size="40" font-weight="800" fill="url(#nameGrad)">Aditya Bisht</text>
+  <text x="4" y="76"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-size="52" font-weight="800"
+    fill="url(#ng)">Aditya Bisht</text>
 
-  <!-- Divider -->
-  <rect x="38" y="88" width="440" height="1" fill="#21262D" rx="1"/>
+  <!-- Thin gradient separator -->
+  <rect x="4" y="90" width="300" height="2" fill="url(#ng)" rx="1"/>
 
-  <!-- Role -->
-  <text x="38" y="116" font-family="'Segoe UI', Arial, sans-serif" font-size="15" fill="#00B4D8" font-weight="500" letter-spacing="0.5">AI &amp; ML Engineer  ·  LLM Systems Builder</text>
+  <!-- Role — all-caps, letter-spaced, muted -->
+  <text x="4" y="120"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-size="14" letter-spacing="3"
+    fill="#8B949E">AI &amp; ML ENGINEER</text>
 
-  <!-- Skill tags row 1 -->
-  <rect x="38"  y="136" width="90"  height="24" rx="12" fill="#161B22" stroke="#00B4D8" stroke-width="0.8"/>
-  <text x="83"  y="153" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#00B4D8" text-anchor="middle">RAG Systems</text>
-
-  <rect x="136" y="136" width="82"  height="24" rx="12" fill="#161B22" stroke="#7B2FBE" stroke-width="0.8"/>
-  <text x="177" y="153" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#7B2FBE" text-anchor="middle">Fine-tuning</text>
-
-  <rect x="226" y="136" width="82"  height="24" rx="12" fill="#161B22" stroke="#00B4D8" stroke-width="0.8"/>
-  <text x="267" y="153" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#00B4D8" text-anchor="middle">Agentic AI</text>
-
-  <rect x="316" y="136" width="76"  height="24" rx="12" fill="#161B22" stroke="#7B2FBE" stroke-width="0.8"/>
-  <text x="354" y="153" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#7B2FBE" text-anchor="middle">LangChain</text>
-
-  <!-- Skill tags row 2 -->
-  <rect x="38"  y="168" width="80"  height="24" rx="12" fill="#161B22" stroke="#7B2FBE" stroke-width="0.8"/>
-  <text x="78"  y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#7B2FBE" text-anchor="middle">LangGraph</text>
-
-  <rect x="126" y="168" width="68"  height="24" rx="12" fill="#161B22" stroke="#00B4D8" stroke-width="0.8"/>
-  <text x="160" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#00B4D8" text-anchor="middle">FastAPI</text>
-
-  <rect x="202" y="168" width="66"  height="24" rx="12" fill="#161B22" stroke="#7B2FBE" stroke-width="0.8"/>
-  <text x="235" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#7B2FBE" text-anchor="middle">PyTorch</text>
-
-  <rect x="276" y="168" width="56"  height="24" rx="12" fill="#161B22" stroke="#00B4D8" stroke-width="0.8"/>
-  <text x="304" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#00B4D8" text-anchor="middle">MLOps</text>
-
-  <rect x="340" y="168" width="58"  height="24" rx="12" fill="#161B22" stroke="#7B2FBE" stroke-width="0.8"/>
-  <text x="369" y="185" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#7B2FBE" text-anchor="middle">Docker</text>
-
-  <!-- Divider 2 -->
-  <rect x="38" y="204" width="440" height="1" fill="#21262D" rx="1"/>
-
-  <!-- Open to Work badge -->
-  <rect x="38" y="218" width="148" height="32" rx="16" fill="#1A2F1C"/>
-  <circle cx="60" cy="234" r="5" fill="#3FB950"/>
-  <text x="75" y="239" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#3FB950" font-weight="600">Open to Work</text>
-
-  <!-- University line -->
-  <text x="38" y="272" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#8B949E">B.Tech IT  ·  MAIT GGSIPU  ·  CGPA: 8.0</text>
-
-  <!-- Oracle certs line -->
-  <text x="38" y="293" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#484F58">Oracle GenAI Pro  ·  Oracle AI Vector Search Pro</text>
+  <!-- Tagline — serif italic, very subtle -->
+  <text x="6" y="162"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="13" font-style="italic"
+    fill="#484F58">Building intelligent systems at scale.</text>
 </svg>
