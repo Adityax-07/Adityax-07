@@ -236,29 +236,20 @@
   </div>
 
   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 10 }}>
-    {['Python', 'PyTorch', 'TensorFlow', 'Hugging Face', 'scikit-learn'].map(function(t) {
-      return (
-        <div key={t} style={{
-          display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14,
-          borderRadius: 8, background: 'rgba(80,40,220,0.15)',
-          border: '1px solid rgba(100,70,240,0.28)',
-          color: 'rgba(200,190,255,0.88)', fontSize: 13, fontWeight: 600
-        }}>{t}</div>
-      );
-    })}
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(255,212,59,0.10)', border: '1px solid rgba(255,212,59,0.30)', color: 'rgba(255,220,80,0.90)', fontSize: 13, fontWeight: 600 }}>Python</div>
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(238,76,44,0.10)', border: '1px solid rgba(238,76,44,0.30)', color: 'rgba(255,110,80,0.90)', fontSize: 13, fontWeight: 600 }}>PyTorch</div>
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(255,111,0,0.10)', border: '1px solid rgba(255,111,0,0.30)', color: 'rgba(255,150,60,0.90)', fontSize: 13, fontWeight: 600 }}>TensorFlow</div>
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(255,210,30,0.10)', border: '1px solid rgba(255,210,30,0.28)', color: 'rgba(255,220,70,0.88)', fontSize: 13, fontWeight: 600 }}>Hugging Face</div>
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(247,147,30,0.10)', border: '1px solid rgba(247,147,30,0.28)', color: 'rgba(255,170,70,0.88)', fontSize: 13, fontWeight: 600 }}>scikit-learn</div>
   </div>
 
   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-    {['LangChain', 'LangGraph', 'FastAPI', 'Streamlit', 'Docker', 'Git'].map(function(t) {
-      return (
-        <div key={t} style={{
-          display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14,
-          borderRadius: 8, background: 'rgba(20,50,200,0.12)',
-          border: '1px solid rgba(60,90,240,0.25)',
-          color: 'rgba(170,195,255,0.85)', fontSize: 13, fontWeight: 600
-        }}>{t}</div>
-      );
-    })}
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(28,198,180,0.10)', border: '1px solid rgba(28,198,180,0.28)', color: 'rgba(60,220,200,0.88)', fontSize: 13, fontWeight: 600 }}>LangChain</div>
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(40,180,100,0.10)', border: '1px solid rgba(40,180,100,0.28)', color: 'rgba(70,210,130,0.88)', fontSize: 13, fontWeight: 600 }}>LangGraph</div>
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(0,150,136,0.10)', border: '1px solid rgba(0,150,136,0.28)', color: 'rgba(0,200,180,0.88)', fontSize: 13, fontWeight: 600 }}>FastAPI</div>
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(255,75,75,0.10)', border: '1px solid rgba(255,75,75,0.28)', color: 'rgba(255,110,110,0.88)', fontSize: 13, fontWeight: 600 }}>Streamlit</div>
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(36,150,237,0.10)', border: '1px solid rgba(36,150,237,0.28)', color: 'rgba(80,180,255,0.88)', fontSize: 13, fontWeight: 600 }}>Docker</div>
+    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(240,80,50,0.10)', border: '1px solid rgba(240,80,50,0.28)', color: 'rgba(255,120,90,0.88)', fontSize: 13, fontWeight: 600 }}>Git</div>
   </div>
 </div>
 ```
