@@ -6,19 +6,40 @@
   border: '1px solid rgba(110,80,220,0.18)'
 }}>
   <style>{`
-    @keyframes h-right { 0%,100%{transform:translateX(0);opacity:0.8;} 50%{transform:translateX(55px);opacity:1.0;} }
-    @keyframes h-left  { 0%,100%{transform:translateX(0);opacity:0.75;} 50%{transform:translateX(-55px);opacity:1.0;} }
-    @keyframes v-down  { 0%,100%{transform:translateY(0);opacity:0.7;} 50%{transform:translateY(35px);opacity:0.95;} }
-    @keyframes v-up    { 0%,100%{transform:translateY(0);opacity:0.7;} 50%{transform:translateY(-35px);opacity:0.95;} }
-    @keyframes g-pulse { 0%,100%{transform:scale(1);opacity:0.72;} 50%{transform:scale(1.22);opacity:0.42;} }
-    #glow-1 { animation: h-right 9s ease-in-out infinite; }
-    #glow-2 { animation: h-left 11s ease-in-out infinite; }
-    #glow-3 { animation: v-up 10s ease-in-out infinite; }
-    #glow-4 { animation: v-up 12s ease-in-out infinite reverse; }
-    #glow-5 { animation: v-down 8s ease-in-out infinite; }
-    #glow-6 { animation: v-down 13s ease-in-out infinite reverse; }
-    #glow-7 { animation: h-right 14s ease-in-out infinite reverse; }
-    #glow-8 { animation: g-pulse 7s ease-in-out infinite; }
+    @keyframes orb-a {
+      0%   { transform:translate(0px,0px);   opacity:0.75; }
+      25%  { transform:translate(110px,55px); opacity:1.0;  }
+      50%  { transform:translate(65px,110px); opacity:0.82; }
+      75%  { transform:translate(-25px,65px); opacity:0.95; }
+      100% { transform:translate(0px,0px);   opacity:0.75; }
+    }
+    @keyframes orb-b {
+      0%   { transform:translate(0px,0px);    opacity:0.70; }
+      25%  { transform:translate(-100px,50px); opacity:0.92; }
+      50%  { transform:translate(-55px,105px); opacity:0.78; }
+      75%  { transform:translate(20px,60px);  opacity:1.0;  }
+      100% { transform:translate(0px,0px);    opacity:0.70; }
+    }
+    @keyframes orb-c {
+      0%   { transform:translate(0px,0px);   opacity:0.68; }
+      30%  { transform:translate(50px,95px);  opacity:0.90; }
+      65%  { transform:translate(-45px,75px); opacity:0.95; }
+      100% { transform:translate(0px,0px);   opacity:0.68; }
+    }
+    @keyframes orb-d {
+      0%   { transform:translate(0px,0px);   opacity:0.72; }
+      35%  { transform:translate(90px,35px);  opacity:0.95; }
+      70%  { transform:translate(55px,-40px); opacity:0.80; }
+      100% { transform:translate(0px,0px);   opacity:0.72; }
+    }
+    #glow-1 { animation: orb-a 9s  ease-in-out infinite; }
+    #glow-2 { animation: orb-b 11s ease-in-out infinite; }
+    #glow-3 { animation: orb-b 10s ease-in-out infinite reverse; }
+    #glow-4 { animation: orb-a 12s ease-in-out infinite reverse; }
+    #glow-5 { animation: orb-c 8s  ease-in-out infinite; }
+    #glow-6 { animation: orb-c 13s ease-in-out infinite reverse; }
+    #glow-7 { animation: orb-d 14s ease-in-out infinite; }
+    #glow-8 { animation: orb-d 10s ease-in-out infinite reverse; }
   `}</style>
 
   <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
