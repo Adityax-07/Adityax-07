@@ -190,3 +190,75 @@
   </div>
 </div>
 ```
+
+
+```aura width=860 height=200
+<div style={{
+  width: '100%', height: '100%', background: '#08080c',
+  display: 'flex', flexDirection: 'column', justifyContent: 'center',
+  fontFamily: 'Inter', position: 'relative', overflow: 'hidden',
+  borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)',
+  paddingLeft: 48, paddingRight: 48
+}}>
+  <style>{`
+    @keyframes tdrift { 0%,100%{transform:translateX(0px);opacity:0.45;} 50%{transform:translateX(220px);opacity:0.75;} }
+    @keyframes tpulse { 0%,100%{transform:scale(1);opacity:0.5;} 50%{transform:scale(1.35);opacity:0.8;} }
+    #te1{animation:tdrift 16s ease-in-out infinite;}
+    #te2{animation:tpulse 11s ease-in-out infinite;}
+    #te3{animation:tdrift 13s ease-in-out infinite reverse;}
+  `}</style>
+
+  <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="grad-t1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(110,20,210,0.5)" />
+        <stop offset="50%" stopColor="rgba(90,15,180,0.18)" />
+        <stop offset="100%" stopColor="rgba(90,15,180,0)" />
+      </radialGradient>
+      <radialGradient id="grad-t2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(40,60,255,0.45)" />
+        <stop offset="50%" stopColor="rgba(30,50,200,0.15)" />
+        <stop offset="100%" stopColor="rgba(30,50,200,0)" />
+      </radialGradient>
+      <radialGradient id="grad-t3" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(0,130,255,0.32)" />
+        <stop offset="60%" stopColor="rgba(0,100,220,0.10)" />
+        <stop offset="100%" stopColor="rgba(0,100,220,0)" />
+      </radialGradient>
+    </defs>
+    <ellipse id="te1" cx="100" cy="220" rx="280" ry="160" fill="url(#grad-t1)" />
+    <ellipse id="te2" cx="600" cy="210" rx="300" ry="160" fill="url(#grad-t2)" />
+    <ellipse id="te3" cx="860" cy="220" rx="200" ry="140" fill="url(#grad-t3)" />
+  </svg>
+
+  <div style={{ display: 'flex', fontSize: 11, fontWeight: 700, color: 'rgba(140,130,170,0.6)', letterSpacing: '2.5px', marginBottom: 16 }}>
+    TECH STACK
+  </div>
+
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 10 }}>
+    {['Python', 'PyTorch', 'TensorFlow', 'Hugging Face', 'scikit-learn'].map(function(t) {
+      return (
+        <div key={t} style={{
+          display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14,
+          borderRadius: 8, background: 'rgba(80,40,220,0.15)',
+          border: '1px solid rgba(100,70,240,0.28)',
+          color: 'rgba(200,190,255,0.88)', fontSize: 13, fontWeight: 600
+        }}>{t}</div>
+      );
+    })}
+  </div>
+
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+    {['LangChain', 'LangGraph', 'FastAPI', 'Streamlit', 'Docker', 'Git'].map(function(t) {
+      return (
+        <div key={t} style={{
+          display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14,
+          borderRadius: 8, background: 'rgba(20,50,200,0.12)',
+          border: '1px solid rgba(60,90,240,0.25)',
+          color: 'rgba(170,195,255,0.85)', fontSize: 13, fontWeight: 600
+        }}>{t}</div>
+      );
+    })}
+  </div>
+</div>
+```
