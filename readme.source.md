@@ -253,3 +253,31 @@
   </div>
 </div>
 ```
+
+```aura width=148 height=44
+<div style={{ width:'100%', height:'100%', background:'#08080c', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:22, border:'1px solid rgba(10,102,194,0.45)', gap:8, fontFamily:'Inter' }}>
+  <div style={{ display:'flex', width:8, height:8, borderRadius:4, background:'rgba(10,102,194,0.95)' }} />
+  <div style={{ display:'flex', fontSize:13, fontWeight:700, color:'rgba(100,160,255,0.95)' }}>LinkedIn</div>
+</div>
+```
+
+```aura width=128 height=44
+<div style={{ width:'100%', height:'100%', background:'#08080c', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:22, border:'1px solid rgba(200,200,200,0.25)', gap:8, fontFamily:'Inter' }}>
+  <div style={{ display:'flex', width:8, height:8, borderRadius:4, background:'rgba(220,220,220,0.85)' }} />
+  <div style={{ display:'flex', fontSize:13, fontWeight:700, color:'rgba(220,220,220,0.92)' }}>GitHub</div>
+</div>
+```
+
+```aura width=158 height=44
+<div style={{ width:'100%', height:'100%', background:'#08080c', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:22, border:'1px solid rgba(255,210,30,0.35)', gap:8, fontFamily:'Inter' }}>
+  <div style={{ display:'flex', width:8, height:8, borderRadius:4, background:'rgba(255,220,60,0.90)' }} />
+  <div style={{ display:'flex', fontSize:13, fontWeight:700, color:'rgba(255,220,70,0.92)' }}>Hugging Face</div>
+</div>
+```
+
+```aura width=110 height=44
+<div style={{ width:'100%', height:'100%', background:'#08080c', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:22, border:'1px solid rgba(234,67,53,0.38)', gap:8, fontFamily:'Inter' }}>
+  <div style={{ display:'flex', width:8, height:8, borderRadius:4, background:'rgba(234,100,90,0.90)' }} />
+  <div style={{ display:'flex', fontSize:13, fontWeight:700, color:'rgba(255,120,110,0.92)' }}>Email</div>
+</div>
+```
