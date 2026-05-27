@@ -130,39 +130,39 @@
   borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)'
 }}>
   <style>{`
-    @keyframes stats-pulse { 0%,100%{transform:scale(1);opacity:0.6;} 50%{transform:scale(1.4);opacity:0.9;} }
-    @keyframes stats-drift { 0%,100%{transform:translateX(0px);opacity:0.5;} 50%{transform:translateX(-180px);opacity:0.8;} }
-    #sg1{animation:stats-drift 14s ease-in-out infinite;}
-    #sg2{animation:stats-pulse 10s ease-in-out infinite;}
-    #sg3{animation:stats-drift 12s ease-in-out infinite reverse;}
+    @keyframes sdrift { 0%,100%{transform:translateX(0px);opacity:0.5;} 50%{transform:translateX(-180px);opacity:0.85;} }
+    @keyframes spulse { 0%,100%{transform:scale(1);opacity:0.55;} 50%{transform:scale(1.4);opacity:0.9;} }
+    #se1{animation:sdrift 14s ease-in-out infinite;}
+    #se2{animation:spulse 10s ease-in-out infinite;}
+    #se3{animation:sdrift 12s ease-in-out infinite reverse;}
   `}</style>
 
   <svg width="860" height="130" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
-      <radialGradient id="sg1" cx="50%" cy="50%" r="50%">
+      <radialGradient id="grad-s1" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stopColor="rgba(40,60,255,0.55)" />
         <stop offset="50%" stopColor="rgba(30,50,200,0.20)" />
         <stop offset="100%" stopColor="rgba(30,50,200,0)" />
       </radialGradient>
-      <radialGradient id="sg2" cx="50%" cy="50%" r="50%">
+      <radialGradient id="grad-s2" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stopColor="rgba(0,130,255,0.38)" />
         <stop offset="60%" stopColor="rgba(0,100,220,0.12)" />
         <stop offset="100%" stopColor="rgba(0,100,220,0)" />
       </radialGradient>
-      <radialGradient id="sg3" cx="50%" cy="50%" r="50%">
+      <radialGradient id="grad-s3" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stopColor="rgba(110,20,210,0.35)" />
         <stop offset="60%" stopColor="rgba(90,15,180,0.10)" />
         <stop offset="100%" stopColor="rgba(90,15,180,0)" />
       </radialGradient>
     </defs>
-    <ellipse id="sg1" cx="430" cy="160" rx="320" ry="120" fill="url(#sg1)" />
-    <ellipse id="sg2" cx="430" cy="150" rx="200" ry="100" fill="url(#sg2)" />
-    <ellipse id="sg3" cx="200" cy="160" rx="180" ry="100" fill="url(#sg3)" />
-    <line x1="287" y1="30" x2="287" y2="100" stroke="rgba(110,80,220,0.2)" strokeWidth="1" />
-    <line x1="573" y1="30" x2="573" y2="100" stroke="rgba(110,80,220,0.2)" strokeWidth="1" />
+    <ellipse id="se1" cx="430" cy="160" rx="320" ry="120" fill="url(#grad-s1)" />
+    <ellipse id="se2" cx="430" cy="150" rx="200" ry="100" fill="url(#grad-s2)" />
+    <ellipse id="se3" cx="200" cy="160" rx="180" ry="100" fill="url(#grad-s3)" />
+    <line x1="287" y1="28" x2="287" y2="102" stroke="rgba(110,80,220,0.22)" strokeWidth="1" />
+    <line x1="573" y1="28" x2="573" y2="102" stroke="rgba(110,80,220,0.22)" strokeWidth="1" />
   </svg>
 
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, zIndex: 1 }}>
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
     <div style={{ display: 'flex', fontSize: 42, fontWeight: 800, color: 'rgba(170,150,255,0.95)', letterSpacing: '-1px', lineHeight: 1 }}>
       {String(github.user.publicRepos || '28')}
     </div>
@@ -171,7 +171,7 @@
     </div>
   </div>
 
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, zIndex: 1 }}>
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
     <div style={{ display: 'flex', fontSize: 42, fontWeight: 800, color: 'rgba(80,140,255,0.95)', letterSpacing: '-1px', lineHeight: 1 }}>
       {String(github.stars || github.stats && github.stats.stars || '0')}
     </div>
@@ -180,7 +180,7 @@
     </div>
   </div>
 
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, zIndex: 1 }}>
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
     <div style={{ display: 'flex', fontSize: 42, fontWeight: 800, color: 'rgba(255,180,60,0.95)', letterSpacing: '-1px', lineHeight: 1 }}>
       {String(github.commits || github.contributions || github.stats && github.stats.commits || '500+')}
     </div>
