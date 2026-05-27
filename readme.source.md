@@ -1,137 +1,149 @@
-```aura width=800 height=210
-<div style={{ position: 'relative', display: 'flex', alignItems: 'center', width: '100%', height: '100%', background: '#0d0e1a', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif', padding: '0 32px' }}>
+```aura width=860 height=200
+<div style={{ position: 'relative', display: 'flex', flexDirection: 'row', alignItems: 'center', width: '100%', height: '100%', background: '#08080c', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif', paddingLeft: 36, paddingRight: 36, columnGap: 28 }}>
   <style>{`
-    @keyframes h-orb-a { 0%, 100% { transform: translate(0,0); opacity: 0.55; } 50% { transform: translate(22px,-18px); opacity: 0.85; } }
-    @keyframes h-orb-b { 0%, 100% { transform: translate(0,0); opacity: 0.45; } 50% { transform: translate(-18px,14px); opacity: 0.75; } }
-    #h-o1 { animation: h-orb-a 9s ease-in-out infinite; }
-    #h-o2 { animation: h-orb-b 11s ease-in-out infinite 1s; }
-    #h-o3 { animation: h-orb-a 8s ease-in-out infinite 2.2s; }
-    #h-o4 { animation: h-orb-b 13s ease-in-out infinite 0.5s; }
+    @keyframes float-slow     { 0%,100%{ transform:translate(0,0);       opacity:0.60;} 50%{ transform:translate(20px,-16px); opacity:0.85;} }
+    @keyframes float-medium   { 0%,100%{ transform:translate(0,0);       opacity:0.50;} 50%{ transform:translate(-16px,12px); opacity:0.75;} }
+    @keyframes float-fast     { 0%,100%{ transform:translate(0,0);       opacity:0.40;} 50%{ transform:translate(12px,-20px);  opacity:0.65;} }
+    @keyframes float-diagonal { 0%,100%{ transform:translate(0,0);       opacity:0.35;} 50%{ transform:translate(-20px,-16px);opacity:0.60;} }
+    #pg-o1{ animation: float-slow       9s ease-in-out infinite;       }
+    #pg-o2{ animation: float-medium    11s ease-in-out infinite  0.8s; }
+    #pg-o3{ animation: float-fast       8s ease-in-out infinite  2.0s; }
+    #pg-o4{ animation: float-diagonal  10s ease-in-out infinite  1.5s; }
+    #pg-o5{ animation: float-slow      12s ease-in-out infinite  3.0s; }
+    #pg-o6{ animation: float-medium     9s ease-in-out infinite  0.5s; }
+    #pg-o7{ animation: float-fast      11s ease-in-out infinite  4.0s; }
+    #pg-o8{ animation: float-diagonal   8s ease-in-out infinite  2.5s; }
   `}</style>
-  <svg width="800" height="210" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
-      <radialGradient id="hg1" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,180,216,0.45)" />
-        <stop offset="100%" stopColor="rgba(0,180,216,0)" />
-      </radialGradient>
-      <radialGradient id="hg2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(123,47,190,0.55)" />
-        <stop offset="100%" stopColor="rgba(123,47,190,0)" />
-      </radialGradient>
+      <radialGradient id="pg-g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(110,60,220,0.55)"/><stop offset="100%" stopColor="rgba(110,60,220,0)"/></radialGradient>
+      <radialGradient id="pg-g2" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(60,100,220,0.50)"/><stop offset="100%" stopColor="rgba(60,100,220,0)"/></radialGradient>
+      <radialGradient id="pg-g3" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(180,80,255,0.40)"/><stop offset="100%" stopColor="rgba(180,80,255,0)"/></radialGradient>
+      <radialGradient id="pg-g4" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(80,160,255,0.35)"/><stop offset="100%" stopColor="rgba(80,160,255,0)"/></radialGradient>
+      <radialGradient id="pg-g5" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(40,200,180,0.30)"/><stop offset="100%" stopColor="rgba(40,200,180,0)"/></radialGradient>
+      <radialGradient id="pg-g6" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(150,50,200,0.40)"/><stop offset="100%" stopColor="rgba(150,50,200,0)"/></radialGradient>
+      <radialGradient id="pg-g7" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(60,80,200,0.35)"/><stop offset="100%" stopColor="rgba(60,80,200,0)"/></radialGradient>
+      <radialGradient id="pg-g8" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(200,100,255,0.30)"/><stop offset="100%" stopColor="rgba(200,100,255,0)"/></radialGradient>
     </defs>
-    <ellipse id="h-o1" cx="700" cy="35"  rx="210" ry="160" fill="url(#hg2)" />
-    <ellipse id="h-o2" cx="90"  cy="190" rx="190" ry="145" fill="url(#hg1)" />
-    <ellipse id="h-o3" cx="590" cy="205" rx="165" ry="125" fill="url(#hg1)" />
-    <ellipse id="h-o4" cx="190" cy="25"  rx="155" ry="125" fill="url(#hg2)" />
+    <ellipse id="pg-o1" cx="100" cy="180" rx="220" ry="170" fill="url(#pg-g1)" />
+    <ellipse id="pg-o2" cx="800" cy="40"  rx="200" ry="160" fill="url(#pg-g2)" />
+    <ellipse id="pg-o3" cx="680" cy="190" rx="180" ry="140" fill="url(#pg-g3)" />
+    <ellipse id="pg-o4" cx="220" cy="30"  rx="170" ry="130" fill="url(#pg-g4)" />
+    <ellipse id="pg-o5" cx="430" cy="200" rx="160" ry="120" fill="url(#pg-g5)" />
+    <ellipse id="pg-o6" cx="560" cy="20"  rx="150" ry="110" fill="url(#pg-g6)" />
+    <ellipse id="pg-o7" cx="350" cy="10"  rx="140" ry="100" fill="url(#pg-g7)" />
+    <ellipse id="pg-o8" cx="750" cy="180" rx="130" ry="100" fill="url(#pg-g8)" />
+    <circle cx="430" cy="100" r="60" fill="none" stroke="rgba(110,80,220,0.12)" strokeWidth="1" />
+    <circle cx="430" cy="100" r="90" fill="none" stroke="rgba(110,80,220,0.08)" strokeWidth="1" />
   </svg>
-  <div style={{ display: 'flex', alignItems: 'center', zIndex: 10, width: '100%' }}>
-    <div style={{ width: 94, height: 94, borderRadius: 999, background: 'linear-gradient(135deg, rgba(0,180,216,0.7), rgba(123,47,190,0.7))', padding: 2, flexShrink: 0 }}>
-      <div style={{ width: 90, height: 90, borderRadius: 999, overflow: 'hidden' }}>
-        <img src={(github && github.user && github.user.avatar_url) || 'https://github.com/Adityax-07.png'} width={90} height={90} style={{ objectFit: 'cover' }} />
-      </div>
-    </div>
-    <div style={{ display: 'flex', flexDirection: 'column', marginLeft: 26 }}>
-      <span style={{ fontSize: 30, fontWeight: 700, color: '#ffffff', lineHeight: 1 }}>
-        {(github && github.user && (github.user.name || github.user.login)) || 'Aditya Bisht'}
-      </span>
-      <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.42)', marginTop: 9 }}>
-        {'AI & ML Engineer | LLMs, RAG Systems & Agentic AI'}
-      </span>
-      <div style={{ display: 'flex', gap: 8, marginTop: 14 }}>
-        {['Python', 'LangChain', 'PyTorch', 'FastAPI'].map((tech, i) => (
-          <span key={i} style={{ padding: '4px 14px', background: 'rgba(0,180,216,0.08)', color: '#00B4D8', borderRadius: 100, fontSize: 12, border: '1px solid rgba(0,180,216,0.28)' }}>{tech}</span>
-        ))}
-      </div>
+
+  <div style={{ display: 'flex', flexShrink: 0, position: 'relative' }}>
+    <div style={{ width: 90, height: 90, borderRadius: '50%', background: 'linear-gradient(135deg, rgba(110,60,220,0.9), rgba(60,100,220,0.9))', padding: 2.5, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <img src={(github && github.user && github.user.avatar_url) || 'https://github.com/Adityax-07.png'} width={85} height={85} style={{ borderRadius: '50%', objectFit: 'cover' }} />
     </div>
   </div>
-</div>
-```
 
-```aura width=800 height=110
-<div style={{ position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: '100%', height: '100%', background: '#0d0e1a', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif' }}>
-  <style>{`
-    @keyframes s-pulse { 0%, 100% { opacity: 0.38; } 50% { opacity: 0.65; } }
-    #s-o1 { animation: s-pulse 8s ease-in-out infinite; }
-    #s-o2 { animation: s-pulse 10s ease-in-out infinite 1.2s; }
-    #s-o3 { animation: s-pulse 9s ease-in-out infinite 2.4s; }
-  `}</style>
-  <svg width="800" height="110" style={{ position: 'absolute', top: 0, left: 0 }}>
-    <defs>
-      <radialGradient id="sg1" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,180,216,0.32)" />
-        <stop offset="100%" stopColor="rgba(0,180,216,0)" />
-      </radialGradient>
-      <radialGradient id="sg2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(155,114,207,0.32)" />
-        <stop offset="100%" stopColor="rgba(155,114,207,0)" />
-      </radialGradient>
-      <radialGradient id="sg3" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(240,192,64,0.28)" />
-        <stop offset="100%" stopColor="rgba(240,192,64,0)" />
-      </radialGradient>
-    </defs>
-    <ellipse id="s-o1" cx="133" cy="55" rx="110" ry="85" fill="url(#sg1)" />
-    <ellipse id="s-o2" cx="400" cy="55" rx="110" ry="85" fill="url(#sg2)" />
-    <ellipse id="s-o3" cx="667" cy="55" rx="110" ry="85" fill="url(#sg3)" />
-  </svg>
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 10 }}>
-    <span style={{ fontSize: 38, fontWeight: 700, color: '#00B4D8', lineHeight: 1 }}>
-      {(github && github.user && github.user.public_repos) || '0'}
+  <div style={{ display: 'flex', flexDirection: 'column', flex: 1, position: 'relative' }}>
+    <span style={{ fontSize: 34, fontWeight: 700, color: '#ffffff', letterSpacing: -1, lineHeight: 1 }}>
+      {(github && github.user && (github.user.name || github.user.login)) || 'Aditya Bisht'}
     </span>
-    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.32)', letterSpacing: 3, textTransform: 'uppercase', marginTop: 7 }}>repos</span>
-  </div>
-  <div style={{ width: 1, height: 36, background: 'rgba(255,255,255,0.07)' }} />
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 10 }}>
-    <span style={{ fontSize: 38, fontWeight: 700, color: '#9B72CF', lineHeight: 1 }}>
-      {(github && github.stars) || '0'}
+    <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.50)', marginTop: 8, lineHeight: 1.4 }}>
+      AI/ML Engineer | RAG Systems, LLM Fine-tuning &amp; Agentic AI
     </span>
-    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.32)', letterSpacing: 3, textTransform: 'uppercase', marginTop: 7 }}>stars</span>
-  </div>
-  <div style={{ width: 1, height: 36, background: 'rgba(255,255,255,0.07)' }} />
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 10 }}>
-    <span style={{ fontSize: 38, fontWeight: 700, color: '#F0C040', lineHeight: 1 }}>
-      {(github && github.commits) || '0'}
-    </span>
-    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.32)', letterSpacing: 3, textTransform: 'uppercase', marginTop: 7 }}>commits</span>
-  </div>
-</div>
-```
-
-```aura width=800 height=175
-<div style={{ position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%', height: '100%', background: '#0d0e1a', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif', padding: '0 32px' }}>
-  <style>{`
-    @keyframes ts-orb { 0%, 100% { opacity: 0.32; } 50% { opacity: 0.58; } }
-    #ts-o1 { animation: ts-orb 10s ease-in-out infinite; }
-    #ts-o2 { animation: ts-orb 12s ease-in-out infinite 2s; }
-  `}</style>
-  <svg width="800" height="175" style={{ position: 'absolute', top: 0, left: 0 }}>
-    <defs>
-      <radialGradient id="tg1" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,180,216,0.28)" />
-        <stop offset="100%" stopColor="rgba(0,180,216,0)" />
-      </radialGradient>
-      <radialGradient id="tg2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(123,47,190,0.28)" />
-        <stop offset="100%" stopColor="rgba(123,47,190,0)" />
-      </radialGradient>
-    </defs>
-    <ellipse id="ts-o1" cx="720" cy="145" rx="190" ry="140" fill="url(#tg2)" />
-    <ellipse id="ts-o2" cx="75"  cy="28"  rx="170" ry="125" fill="url(#tg1)" />
-  </svg>
-  <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.28)', letterSpacing: 4, textTransform: 'uppercase', marginBottom: 20, zIndex: 10 }}>tech stack</span>
-  <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12, zIndex: 10 }}>
-    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.22)', letterSpacing: 2, textTransform: 'uppercase', width: 88, flexShrink: 0 }}>languages</span>
-    <div style={{ display: 'flex', gap: 8 }}>
-      {['Python', 'JavaScript', 'TypeScript', 'C++', 'Java'].map((l, i) => (
-        <span key={i} style={{ padding: '5px 14px', background: 'rgba(255,255,255,0.04)', color: 'rgba(255,255,255,0.65)', borderRadius: 8, fontSize: 12, border: '1px solid rgba(255,255,255,0.07)' }}>{l}</span>
+    <div style={{ display: 'flex', flexDirection: 'row', columnGap: 8, marginTop: 16, flexWrap: 'wrap' }}>
+      {['Python', 'LangChain', 'LangGraph', 'PyTorch'].map((tag, i) => (
+        <span key={i} style={{ paddingTop: 4, paddingBottom: 4, paddingLeft: 14, paddingRight: 14, background: 'rgba(110,80,220,0.12)', color: 'rgba(180,160,255,0.85)', borderRadius: 100, fontSize: 11, border: '1px solid rgba(110,80,220,0.28)', letterSpacing: 0.5 }}>{tag}</span>
       ))}
     </div>
   </div>
-  <div style={{ display: 'flex', alignItems: 'center', gap: 12, zIndex: 10 }}>
-    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.22)', letterSpacing: 2, textTransform: 'uppercase', width: 88, flexShrink: 0 }}>frameworks</span>
-    <div style={{ display: 'flex', gap: 8 }}>
-      {['LangChain', 'FastAPI', 'PyTorch', 'React', 'Streamlit'].map((f, i) => (
-        <span key={i} style={{ padding: '5px 14px', background: 'rgba(255,255,255,0.04)', color: 'rgba(255,255,255,0.65)', borderRadius: 8, fontSize: 12, border: '1px solid rgba(255,255,255,0.07)' }}>{f}</span>
+</div>
+```
+
+```aura width=860 height=140
+<div style={{ position: 'relative', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-around', width: '100%', height: '100%', background: '#08080c', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif' }}>
+  <style>{`
+    @keyframes float-slow   { 0%,100%{ transform:translate(0,0);    opacity:0.50;} 50%{ transform:translate(16px,-12px); opacity:0.75;} }
+    @keyframes float-medium { 0%,100%{ transform:translate(0,0);    opacity:0.40;} 50%{ transform:translate(-12px,10px);opacity:0.65;} }
+    #st-o1{ animation: float-slow   10s ease-in-out infinite;      }
+    #st-o2{ animation: float-medium 12s ease-in-out infinite 1.0s; }
+    #st-o3{ animation: float-slow    9s ease-in-out infinite 2.0s; }
+    #st-o4{ animation: float-medium 11s ease-in-out infinite 0.5s; }
+  `}</style>
+  <svg width="860" height="140" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="st-g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(110,60,220,0.45)"/><stop offset="100%" stopColor="rgba(110,60,220,0)"/></radialGradient>
+      <radialGradient id="st-g2" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(60,100,220,0.40)"/><stop offset="100%" stopColor="rgba(60,100,220,0)"/></radialGradient>
+      <radialGradient id="st-g3" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(180,80,255,0.35)"/><stop offset="100%" stopColor="rgba(180,80,255,0)"/></radialGradient>
+      <radialGradient id="st-g4" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(80,160,255,0.30)"/><stop offset="100%" stopColor="rgba(80,160,255,0)"/></radialGradient>
+    </defs>
+    <ellipse id="st-o1" cx="80"  cy="120" rx="180" ry="130" fill="url(#st-g1)" />
+    <ellipse id="st-o2" cx="780" cy="30"  rx="170" ry="120" fill="url(#st-g2)" />
+    <ellipse id="st-o3" cx="430" cy="140" rx="160" ry="110" fill="url(#st-g3)" />
+    <ellipse id="st-o4" cx="430" cy="0"   rx="150" ry="100" fill="url(#st-g4)" />
+    <line x1="286" y1="28" x2="286" y2="112" stroke="rgba(110,80,220,0.18)" strokeWidth="1" />
+    <line x1="573" y1="28" x2="573" y2="112" stroke="rgba(110,80,220,0.18)" strokeWidth="1" />
+  </svg>
+
+  <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', rowGap: 6 }}>
+    <span style={{ fontSize: 40, fontWeight: 700, color: 'rgba(160,120,255,1)', letterSpacing: -1 }}>
+      {(github && github.user && github.user.public_repos) || '28'}
+    </span>
+    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', letterSpacing: 3, textTransform: 'uppercase' }}>repos</span>
+  </div>
+
+  <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', rowGap: 6 }}>
+    <span style={{ fontSize: 40, fontWeight: 700, color: 'rgba(100,170,255,1)', letterSpacing: -1 }}>
+      {(github && github.stars) || '0'}
+    </span>
+    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', letterSpacing: 3, textTransform: 'uppercase' }}>stars</span>
+  </div>
+
+  <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', rowGap: 6 }}>
+    <span style={{ fontSize: 40, fontWeight: 700, color: 'rgba(255,200,80,1)', letterSpacing: -1 }}>
+      {(github && github.commits) || '200+'}
+    </span>
+    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.35)', letterSpacing: 3, textTransform: 'uppercase' }}>commits</span>
+  </div>
+</div>
+```
+
+```aura width=860 height=168
+<div style={{ position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '100%', height: '100%', background: '#08080c', borderRadius: 20, overflow: 'hidden', fontFamily: 'Inter, sans-serif', paddingLeft: 36, paddingRight: 36, rowGap: 20 }}>
+  <style>{`
+    @keyframes float-slow   { 0%,100%{ transform:translate(0,0);    opacity:0.45;} 50%{ transform:translate(18px,-14px); opacity:0.70;} }
+    @keyframes float-medium { 0%,100%{ transform:translate(0,0);    opacity:0.38;} 50%{ transform:translate(-14px,10px);opacity:0.62;} }
+    #tk-o1{ animation: float-slow   11s ease-in-out infinite;      }
+    #tk-o2{ animation: float-medium 13s ease-in-out infinite 1.0s; }
+    #tk-o3{ animation: float-slow   10s ease-in-out infinite 2.5s; }
+    #tk-o4{ animation: float-medium 12s ease-in-out infinite 0.5s; }
+  `}</style>
+  <svg width="860" height="168" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="tk-g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(110,60,220,0.40)"/><stop offset="100%" stopColor="rgba(110,60,220,0)"/></radialGradient>
+      <radialGradient id="tk-g2" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(60,100,220,0.35)"/><stop offset="100%" stopColor="rgba(60,100,220,0)"/></radialGradient>
+      <radialGradient id="tk-g3" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(180,80,255,0.30)"/><stop offset="100%" stopColor="rgba(180,80,255,0)"/></radialGradient>
+      <radialGradient id="tk-g4" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(80,160,255,0.28)"/><stop offset="100%" stopColor="rgba(80,160,255,0)"/></radialGradient>
+    </defs>
+    <ellipse id="tk-o1" cx="80"  cy="140" rx="200" ry="140" fill="url(#tk-g1)" />
+    <ellipse id="tk-o2" cx="800" cy="40"  rx="180" ry="130" fill="url(#tk-g2)" />
+    <ellipse id="tk-o3" cx="520" cy="168" rx="160" ry="120" fill="url(#tk-g3)" />
+    <ellipse id="tk-o4" cx="340" cy="0"   rx="150" ry="110" fill="url(#tk-g4)" />
+  </svg>
+
+  <div style={{ position: 'relative', display: 'flex', flexDirection: 'row', alignItems: 'center', columnGap: 14 }}>
+    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.30)', letterSpacing: 3, textTransform: 'uppercase', width: 90, flexShrink: 0 }}>languages</span>
+    <div style={{ display: 'flex', flexDirection: 'row', columnGap: 8, flexWrap: 'wrap' }}>
+      {['Python', 'JavaScript', 'TypeScript', 'C++', 'Java'].map((lang, i) => (
+        <span key={i} style={{ paddingTop: 5, paddingBottom: 5, paddingLeft: 16, paddingRight: 16, background: 'rgba(110,80,220,0.10)', color: 'rgba(180,160,255,0.80)', borderRadius: 100, fontSize: 12, border: '1px solid rgba(110,80,220,0.22)', letterSpacing: 0.3 }}>{lang}</span>
+      ))}
+    </div>
+  </div>
+
+  <div style={{ position: 'relative', display: 'flex', flexDirection: 'row', alignItems: 'center', columnGap: 14 }}>
+    <span style={{ fontSize: 10, color: 'rgba(255,255,255,0.30)', letterSpacing: 3, textTransform: 'uppercase', width: 90, flexShrink: 0 }}>frameworks</span>
+    <div style={{ display: 'flex', flexDirection: 'row', columnGap: 8, flexWrap: 'wrap' }}>
+      {['LangChain', 'LangGraph', 'FastAPI', 'PyTorch', 'React'].map((fw, i) => (
+        <span key={i} style={{ paddingTop: 5, paddingBottom: 5, paddingLeft: 16, paddingRight: 16, background: 'rgba(60,100,220,0.10)', color: 'rgba(130,170,255,0.80)', borderRadius: 100, fontSize: 12, border: '1px solid rgba(60,100,220,0.22)', letterSpacing: 0.3 }}>{fw}</span>
       ))}
     </div>
   </div>
