@@ -170,21 +170,32 @@
     TECH STACK
   </div>
 
-  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 10 }}>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(255,212,59,0.10)', border: '1px solid rgba(255,212,59,0.30)', color: 'rgba(255,220,80,0.90)', fontSize: 13, fontWeight: 600 }}>Python</div>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(238,76,44,0.10)', border: '1px solid rgba(238,76,44,0.30)', color: 'rgba(255,110,80,0.90)', fontSize: 13, fontWeight: 600 }}>PyTorch</div>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(255,111,0,0.10)', border: '1px solid rgba(255,111,0,0.30)', color: 'rgba(255,150,60,0.90)', fontSize: 13, fontWeight: 600 }}>TensorFlow</div>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(255,210,30,0.10)', border: '1px solid rgba(255,210,30,0.28)', color: 'rgba(255,220,70,0.88)', fontSize: 13, fontWeight: 600 }}>Hugging Face</div>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(247,147,30,0.10)', border: '1px solid rgba(247,147,30,0.28)', color: 'rgba(255,170,70,0.88)', fontSize: 13, fontWeight: 600 }}>scikit-learn</div>
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 10 }}>
+    {['Python','PyTorch','TensorFlow','Hugging Face','scikit-learn'].map(function(t) {
+      return (
+        <div key={t} style={{
+          display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 16, paddingRight: 16,
+          borderRadius: 8, background: '#08080c',
+          border: '1px solid rgba(255,255,255,0.18)',
+          color: 'rgba(255,255,255,0.90)', fontSize: 13, fontWeight: 600,
+          filter: 'drop-shadow(0 0 7px rgba(255,255,255,0.35))'
+        }}>{t}</div>
+      );
+    })}
   </div>
 
-  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(28,198,180,0.10)', border: '1px solid rgba(28,198,180,0.28)', color: 'rgba(60,220,200,0.88)', fontSize: 13, fontWeight: 600 }}>LangChain</div>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(40,180,100,0.10)', border: '1px solid rgba(40,180,100,0.28)', color: 'rgba(70,210,130,0.88)', fontSize: 13, fontWeight: 600 }}>LangGraph</div>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(0,150,136,0.10)', border: '1px solid rgba(0,150,136,0.28)', color: 'rgba(0,200,180,0.88)', fontSize: 13, fontWeight: 600 }}>FastAPI</div>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(255,75,75,0.10)', border: '1px solid rgba(255,75,75,0.28)', color: 'rgba(255,110,110,0.88)', fontSize: 13, fontWeight: 600 }}>Streamlit</div>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(36,150,237,0.10)', border: '1px solid rgba(36,150,237,0.28)', color: 'rgba(80,180,255,0.88)', fontSize: 13, fontWeight: 600 }}>Docker</div>
-    <div style={{ display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 14, paddingRight: 14, borderRadius: 8, background: 'rgba(240,80,50,0.10)', border: '1px solid rgba(240,80,50,0.28)', color: 'rgba(255,120,90,0.88)', fontSize: 13, fontWeight: 600 }}>Git</div>
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+    {['LangChain','LangGraph','FastAPI','Streamlit','Docker','Git'].map(function(t) {
+      return (
+        <div key={t} style={{
+          display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 16, paddingRight: 16,
+          borderRadius: 8, background: '#08080c',
+          border: '1px solid rgba(255,255,255,0.18)',
+          color: 'rgba(255,255,255,0.90)', fontSize: 13, fontWeight: 600,
+          filter: 'drop-shadow(0 0 7px rgba(255,255,255,0.35))'
+        }}>{t}</div>
+      );
+    })}
   </div>
 </div>
 ```
