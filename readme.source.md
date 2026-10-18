@@ -127,73 +127,94 @@
 
 
 
-```aura width=860 height=200
+```aura width=860 height=340
 <div style={{
   width: '100%', height: '100%', background: '#08080c',
-  display: 'flex', flexDirection: 'column', justifyContent: 'center',
-  fontFamily: 'Inter', position: 'relative', overflow: 'hidden',
-  borderRadius: 16, border: '1px solid rgba(110,80,220,0.18)',
-  paddingLeft: 48, paddingRight: 48
+  display: 'flex', flexDirection: 'column', fontFamily: 'Inter',
+  position: 'relative', overflow: 'hidden', borderRadius: 16,
+  border: '1px solid rgba(110,80,220,0.28)',
+  paddingTop: 28, paddingLeft: 42, paddingRight: 42
 }}>
   <style>{`
-    @keyframes tdrift { 0%,100%{transform:translateX(0px);opacity:0.45;} 50%{transform:translateX(220px);opacity:0.75;} }
-    @keyframes tpulse { 0%,100%{transform:scale(1);opacity:0.5;} 50%{transform:scale(1.35);opacity:0.8;} }
-    #te1{animation:tdrift 16s ease-in-out infinite;}
-    #te2{animation:tpulse 11s ease-in-out infinite;}
-    #te3{animation:tdrift 13s ease-in-out infinite reverse;}
+    @keyframes stack-drift-a {
+      0%,100% { transform:translate(0px,0px); opacity:0.78; }
+      50% { transform:translate(110px,55px); opacity:1; }
+    }
+    @keyframes stack-drift-b {
+      0%,100% { transform:translate(0px,0px); opacity:0.72; }
+      50% { transform:translate(-115px,65px); opacity:1; }
+    }
+    @keyframes stack-drift-c {
+      0%,100% { transform:translate(0px,0px); opacity:0.72; }
+      50% { transform:translate(75px,-50px); opacity:0.96; }
+    }
+    #stack-glow-1 { animation:stack-drift-a 12s ease-in-out infinite; }
+    #stack-glow-2 { animation:stack-drift-b 14s ease-in-out infinite; }
+    #stack-glow-3 { animation:stack-drift-c 10s ease-in-out infinite; }
+    #stack-glow-4 { animation:stack-drift-b 17s ease-in-out infinite reverse; }
+    @media (prefers-reduced-motion: reduce) {
+      #stack-glow-1, #stack-glow-2, #stack-glow-3, #stack-glow-4 { animation:none; }
+    }
   `}</style>
 
-  <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="340" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
-      <radialGradient id="grad-t1" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(110,20,210,0.5)" />
-        <stop offset="50%" stopColor="rgba(90,15,180,0.18)" />
+      <radialGradient id="stack-purple" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(130,25,230,0.68)" />
+        <stop offset="48%" stopColor="rgba(90,15,180,0.28)" />
         <stop offset="100%" stopColor="rgba(90,15,180,0)" />
       </radialGradient>
-      <radialGradient id="grad-t2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(40,60,255,0.45)" />
-        <stop offset="50%" stopColor="rgba(30,50,200,0.15)" />
-        <stop offset="100%" stopColor="rgba(30,50,200,0)" />
+      <radialGradient id="stack-blue" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(40,70,255,0.58)" />
+        <stop offset="48%" stopColor="rgba(25,55,190,0.25)" />
+        <stop offset="100%" stopColor="rgba(25,55,190,0)" />
       </radialGradient>
-      <radialGradient id="grad-t3" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,130,255,0.32)" />
-        <stop offset="60%" stopColor="rgba(0,100,220,0.10)" />
-        <stop offset="100%" stopColor="rgba(0,100,220,0)" />
+      <radialGradient id="stack-cyan" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(0,175,225,0.46)" />
+        <stop offset="50%" stopColor="rgba(0,120,210,0.17)" />
+        <stop offset="100%" stopColor="rgba(0,120,210,0)" />
       </radialGradient>
     </defs>
-    <ellipse id="te1" cx="100" cy="220" rx="280" ry="160" fill="url(#grad-t1)" />
-    <ellipse id="te2" cx="600" cy="210" rx="300" ry="160" fill="url(#grad-t2)" />
-    <ellipse id="te3" cx="860" cy="220" rx="200" ry="140" fill="url(#grad-t3)" />
+    <ellipse id="stack-glow-1" cx="120" cy="75" rx="260" ry="195" fill="url(#stack-purple)" />
+    <ellipse id="stack-glow-2" cx="740" cy="65" rx="245" ry="185" fill="url(#stack-blue)" />
+    <ellipse id="stack-glow-3" cx="270" cy="305" rx="280" ry="175" fill="url(#stack-cyan)" />
+    <ellipse id="stack-glow-4" cx="725" cy="315" rx="250" ry="170" fill="url(#stack-purple)" />
   </svg>
 
-  <div style={{ display: 'flex', fontSize: 11, fontWeight: 700, color: 'rgba(140,130,170,0.6)', letterSpacing: '2.5px', marginBottom: 16 }}>
+  <div style={{ display: 'flex', fontSize: 12, fontWeight: 700, color: '#c7b5ef', letterSpacing: '2.5px', marginBottom: 16 }}>
     TECH STACK
   </div>
 
-  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 10 }}>
-    {['Python','PyTorch','TensorFlow','Hugging Face','scikit-learn'].map(function(t) {
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 9 }}>
+    {[
+      {label:'LANGUAGES', color:'#c99cff', items:['Python','TypeScript','JavaScript']},
+      {label:'AI / ML', color:'#aa9aff', items:['PyTorch','TensorFlow','Hugging Face','scikit-learn']},
+      {label:'LLM / AGENTS', color:'#78baff', items:['LangChain','LangGraph','FAISS','vLLM']},
+      {label:'BUILD / SHIP', color:'#73d7e9', items:['FastAPI','Streamlit','Docker','Git']}
+    ].map(function(group) {
       return (
-        <div key={t} style={{
-          display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 16, paddingRight: 16,
-          borderRadius: 8, background: '#08080c',
-          border: '1px solid rgba(255,255,255,0.18)',
-          color: 'rgba(255,255,255,0.90)', fontSize: 13, fontWeight: 600,
-          filter: 'drop-shadow(0 0 7px rgba(255,255,255,0.35))'
-        }}>{t}</div>
-      );
-    })}
-  </div>
-
-  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-    {['LangChain','LangGraph','FastAPI','Streamlit','Docker','Git'].map(function(t) {
-      return (
-        <div key={t} style={{
-          display: 'flex', paddingTop: 5, paddingBottom: 5, paddingLeft: 16, paddingRight: 16,
-          borderRadius: 8, background: '#08080c',
-          border: '1px solid rgba(255,255,255,0.18)',
-          color: 'rgba(255,255,255,0.90)', fontSize: 13, fontWeight: 600,
-          filter: 'drop-shadow(0 0 7px rgba(255,255,255,0.35))'
-        }}>{t}</div>
+        <div key={group.label} style={{
+          display:'flex', alignItems:'center', height:55, paddingLeft:15, paddingRight:12,
+          borderRadius:10, background:'rgba(8,8,16,0.62)',
+          border:'1px solid rgba(190,165,255,0.18)'
+        }}>
+          <div style={{ display:'flex', alignItems:'center', gap:9, width:145, flexShrink:0 }}>
+            <div style={{ width:7, height:7, borderRadius:4, background:group.color }} />
+            <div style={{ fontSize:13, fontWeight:700, letterSpacing:'1px', color:group.color }}>{group.label}</div>
+          </div>
+          <div style={{ display:'flex', alignItems:'center', gap:8 }}>
+            {group.items.map(function(t) {
+              return (
+                <div key={t} style={{
+                  display:'flex', paddingTop:7, paddingBottom:7, paddingLeft:13, paddingRight:13,
+                  borderRadius:7, background:'rgba(8,8,12,0.82)',
+                  border:'1px solid rgba(205,190,255,0.26)',
+                  color:'#f4f1ff', fontSize:19, fontWeight:600
+                }}>{t}</div>
+              );
+            })}
+          </div>
+        </div>
       );
     })}
   </div>
