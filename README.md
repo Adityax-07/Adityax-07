@@ -10,7 +10,7 @@
 
 <h2 align="center">About me</h2>
 
-<img align="right" src="./assets/astronaut-wave-dotted.gif" width="190" alt="Monochrome halftone astronaut turning and waving" />
+<img align="right" src="./assets/astronaut-wave-horizontal.gif" width="190" alt="Monochrome dotted astronaut waving one hand left to right" />
 
 I build and evaluate RAG systems, agent workflows, and CLI-native agent skills. My current focus is agentic orchestration and self-hosted LLM inference with vLLM.
 
