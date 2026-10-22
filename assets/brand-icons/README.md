@@ -1,0 +1,1 @@
+These marks were downloaded from [Simple Icons](https://github.com/simple-icons/simple-icons) on 2026-10-22 and are used to build the local stack strips. Simple Icons is CC0-1.0; the underlying brand marks may still have trademark or individual license restrictions. The FAISS tile in `stack-ai-extra.svg` is an original generic vector-search glyph, not an official logo.

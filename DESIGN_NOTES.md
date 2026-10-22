@@ -8,4 +8,6 @@ The project claims link directly to the public repositories. The activity graph 
 
 The tech icon rows are self-hosted copies generated from [skill-icons](https://github.com/tandpfun/skill-icons) and include its [MIT license](assets/SKILL_ICONS_LICENSE.txt). Remaining external runtime dependencies: `streak-stats.demolab.com` for the streak and GitHub's raw content host for generated Pac-Man SVGs. The workflow uses versioned `abozanona/pacman-contribution-graph@v5.0.0` and `crazy-max/ghaction-github-pages@v5`; the hero renderer is pinned to `readme-aura@1.0.4`. All content remains legible if decorative images fail.
 
+The expanded row adds Streamlit, Hugging Face, LangChain, LangGraph, FAISS, and vLLM without claiming any new skills. Five marks come from [Simple Icons](https://github.com/simple-icons/simple-icons); FAISS uses a custom vector-search glyph rather than an unofficial logo. Their local sources and attribution are in `assets/brand-icons/`, and `scripts/build_stack_icons.py` rebuilds the two additional strips.
+
 To refresh assets manually: run the **Generate Pac-Man contribution graph** and **readme-aura** workflows in Actions. The source README is `readme.source.md`; edit that file as well as the generated `README.md` when changing prose below the hero.

@@ -32,12 +32,15 @@ Oracle Generative AI Professional · Oracle AI Vector Search Professional
 
 <p align="center">
   <img src="./assets/stack-languages.svg" alt="Python, TypeScript, JavaScript, and FastAPI icons" height="42" />
+  <img src="./assets/stack-streamlit.svg" alt="Streamlit icon" height="42" />
 </p>
 
 <p align="center"><strong>AI &amp; inference</strong><br />PyTorch · TensorFlow · scikit-learn · Hugging Face · LangChain · LangGraph · FAISS · vLLM</p>
 
 <p align="center">
   <img src="./assets/stack-ai.svg" alt="PyTorch, TensorFlow, and scikit-learn icons" height="42" />
+  <br />
+  <img src="./assets/stack-ai-extra.svg" alt="Hugging Face, LangChain, LangGraph, FAISS, and vLLM icons" height="42" />
 </p>
 
 <p align="center"><strong>Tools</strong><br />Docker · Git · GitHub · VS Code</p>
