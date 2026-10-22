@@ -46,10 +46,10 @@ Oracle Generative AI Professional · Oracle AI Vector Search Professional
 
 <h2 align="center">Selected work</h2>
 
-- [RAG-Systems-eval-suite](https://github.com/Adityax-07/RAG-Systems-eval-suite) — 8 RAG systems, 50 questions, 10 metrics; advanced RAG scored 0.770 overall.
-- [AgentBench](https://github.com/Adityax-07/AgentBench) — 50-query evaluation; 4% hallucination for the multi-agent system versus 24% for a single agent.
-- [LLM-vs-RAG-vs-Fine-Tuning-](https://github.com/Adityax-07/LLM-vs-RAG-vs-Fine-Tuning-) — compared 3 systems across 50 questions and 8 metrics.
-- [RAG_SECURITY_DEMO](https://github.com/Adityax-07/RAG_SECURITY_DEMO) — secure RAG pipeline tested with 100 labeled queries across 8 categories.
+* [RAG-Systems-eval-suite](https://github.com/Adityax-07/RAG-Systems-eval-suite) — 8 RAG systems, 50 questions, 10 metrics; advanced RAG scored 0.770 overall.
+* [AgentBench](https://github.com/Adityax-07/AgentBench) — 50-query evaluation; 4% hallucination for the multi-agent system versus 24% for a single agent.
+* [LLM-vs-RAG-vs-Fine-Tuning-](https://github.com/Adityax-07/LLM-vs-RAG-vs-Fine-Tuning-) — compared 3 systems across 50 questions and 8 metrics.
+* [RAG_SECURITY_DEMO](https://github.com/Adityax-07/RAG_SECURITY_DEMO) — secure RAG pipeline tested with 100 labeled queries across 8 categories.
 
 <h2 align="center">GitHub stats</h2>
 
