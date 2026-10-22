@@ -47,44 +47,60 @@
   <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
       <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(240,240,240,0.33)" />
-        <stop offset="40%" stopColor="rgba(240,240,240,0.13)" />
-        <stop offset="70%" stopColor="rgba(240,240,240,0)" />
+        <stop offset="0%" stopColor="rgba(255,255,255,0.65)" />
+        <stop offset="22%" stopColor="rgba(255,255,255,0.43)" />
+        <stop offset="50%" stopColor="rgba(255,255,255,0.18)" />
+        <stop offset="78%" stopColor="rgba(255,255,255,0.04)" />
+        <stop offset="100%" stopColor="rgba(255,255,255,0)" />
       </radialGradient>
       <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(180,180,180,0.25)" />
-        <stop offset="45%" stopColor="rgba(180,180,180,0.10)" />
-        <stop offset="70%" stopColor="rgba(180,180,180,0)" />
+        <stop offset="0%" stopColor="rgba(255,255,255,0.60)" />
+        <stop offset="24%" stopColor="rgba(255,255,255,0.38)" />
+        <stop offset="52%" stopColor="rgba(255,255,255,0.15)" />
+        <stop offset="80%" stopColor="rgba(255,255,255,0.03)" />
+        <stop offset="100%" stopColor="rgba(255,255,255,0)" />
       </radialGradient>
       <radialGradient id="g3" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(140,140,140,0.18)" />
-        <stop offset="50%" stopColor="rgba(140,140,140,0.08)" />
-        <stop offset="70%" stopColor="rgba(140,140,140,0)" />
+        <stop offset="0%" stopColor="rgba(255,255,255,0.44)" />
+        <stop offset="24%" stopColor="rgba(255,255,255,0.26)" />
+        <stop offset="54%" stopColor="rgba(255,255,255,0.10)" />
+        <stop offset="82%" stopColor="rgba(255,255,255,0.02)" />
+        <stop offset="100%" stopColor="rgba(255,255,255,0)" />
       </radialGradient>
       <radialGradient id="g4" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(230,230,230,0.16)" />
-        <stop offset="60%" stopColor="rgba(230,230,230,0.06)" />
-        <stop offset="100%" stopColor="rgba(230,230,230,0)" />
+        <stop offset="0%" stopColor="rgba(255,255,255,0.42)" />
+        <stop offset="24%" stopColor="rgba(255,255,255,0.24)" />
+        <stop offset="54%" stopColor="rgba(255,255,255,0.09)" />
+        <stop offset="82%" stopColor="rgba(255,255,255,0.02)" />
+        <stop offset="100%" stopColor="rgba(255,255,255,0)" />
       </radialGradient>
       <radialGradient id="g5" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(255,255,255,0.22)" />
-        <stop offset="45%" stopColor="rgba(255,255,255,0.09)" />
-        <stop offset="70%" stopColor="rgba(255,255,255,0)" />
+        <stop offset="0%" stopColor="rgba(255,255,255,0.48)" />
+        <stop offset="24%" stopColor="rgba(255,255,255,0.28)" />
+        <stop offset="54%" stopColor="rgba(255,255,255,0.11)" />
+        <stop offset="82%" stopColor="rgba(255,255,255,0.02)" />
+        <stop offset="100%" stopColor="rgba(255,255,255,0)" />
       </radialGradient>
       <radialGradient id="g6" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(130,130,130,0.20)" />
-        <stop offset="50%" stopColor="rgba(130,130,130,0.07)" />
-        <stop offset="70%" stopColor="rgba(130,130,130,0)" />
+        <stop offset="0%" stopColor="rgba(255,255,255,0.38)" />
+        <stop offset="24%" stopColor="rgba(255,255,255,0.22)" />
+        <stop offset="54%" stopColor="rgba(255,255,255,0.08)" />
+        <stop offset="82%" stopColor="rgba(255,255,255,0.02)" />
+        <stop offset="100%" stopColor="rgba(255,255,255,0)" />
       </radialGradient>
       <radialGradient id="g7" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(200,200,200,0.17)" />
-        <stop offset="60%" stopColor="rgba(200,200,200,0.06)" />
-        <stop offset="100%" stopColor="rgba(200,200,200,0)" />
+        <stop offset="0%" stopColor="rgba(255,255,255,0.38)" />
+        <stop offset="24%" stopColor="rgba(255,255,255,0.22)" />
+        <stop offset="54%" stopColor="rgba(255,255,255,0.08)" />
+        <stop offset="82%" stopColor="rgba(255,255,255,0.02)" />
+        <stop offset="100%" stopColor="rgba(255,255,255,0)" />
       </radialGradient>
       <radialGradient id="g8" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(170,170,170,0.16)" />
-        <stop offset="50%" stopColor="rgba(170,170,170,0.06)" />
-        <stop offset="70%" stopColor="rgba(170,170,170,0)" />
+        <stop offset="0%" stopColor="rgba(255,255,255,0.40)" />
+        <stop offset="24%" stopColor="rgba(255,255,255,0.24)" />
+        <stop offset="54%" stopColor="rgba(255,255,255,0.09)" />
+        <stop offset="82%" stopColor="rgba(255,255,255,0.02)" />
+        <stop offset="100%" stopColor="rgba(255,255,255,0)" />
       </radialGradient>
     </defs>
     <ellipse id="glow-1" cx="50"  cy="22"  rx="200" ry="150" fill="url(#g1)" />
