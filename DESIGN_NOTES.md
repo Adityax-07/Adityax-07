@@ -1,6 +1,6 @@
 # Profile design notes
 
-The existing animated `readme-aura` hero is preserved unchanged. Everything below it follows the section rhythm of [midnightshady/midnightshady](https://github.com/midnightshady/midnightshady): compact intro, About, Connect, Tech Stack, work, stats, contribution art, and closing philosophy. A [fork](https://github.com/Adityax-07/midnightshady) is kept as the reference copy.
+The existing animated `readme-aura` hero keeps its layout, content, and eight moving glow paths; its palette is now grayscale to match the halftone banner above it. Everything below follows the section rhythm of [midnightshady/midnightshady](https://github.com/midnightshady/midnightshady): compact intro, About, Connect, Tech Stack, work, stats, contribution art, and closing philosophy. A [fork](https://github.com/Adityax-07/midnightshady) is kept as the reference copy.
 
 The reference repository does not provide a reuse license. Its illustrations were **not** copied into this profile. `assets/astronaut-original.png` is an original generated illustration, centered at 160 px so the About text remains usable on mobile. It was generated from the prompt: “A solitary astronaut/software explorer shown waist-up, slightly turned left, rendered as crisp monochrome grayscale pixel-halftone engraving with subtle glitch/dither texture. Transparent background, no scene, frame, text, logos, badges, or watermarks; readable at 200 px wide.”
 

@@ -2,10 +2,10 @@
 
 ```aura width=860 height=200
 <div style={{
-  width: '100%', height: '100%', background: '#08080c',
+  width: '100%', height: '100%', background: '#08090b',
   display: 'flex', alignItems: 'center', fontFamily: 'Inter',
   position: 'relative', overflow: 'hidden', borderRadius: 16,
-  border: '1px solid rgba(110,80,220,0.18)'
+  border: '1px solid rgba(230,230,230,0.20)'
 }}>
   <style>{`
     @keyframes orb-a {
@@ -47,44 +47,44 @@
   <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
       <radialGradient id="g1" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(110,20,210,0.72)" />
-        <stop offset="40%" stopColor="rgba(90,15,180,0.35)" />
-        <stop offset="70%" stopColor="rgba(90,15,180,0)" />
+        <stop offset="0%" stopColor="rgba(240,240,240,0.33)" />
+        <stop offset="40%" stopColor="rgba(240,240,240,0.13)" />
+        <stop offset="70%" stopColor="rgba(240,240,240,0)" />
       </radialGradient>
       <radialGradient id="g2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(40,60,255,0.60)" />
-        <stop offset="45%" stopColor="rgba(30,50,200,0.25)" />
-        <stop offset="70%" stopColor="rgba(30,50,200,0)" />
+        <stop offset="0%" stopColor="rgba(180,180,180,0.25)" />
+        <stop offset="45%" stopColor="rgba(180,180,180,0.10)" />
+        <stop offset="70%" stopColor="rgba(180,180,180,0)" />
       </radialGradient>
       <radialGradient id="g3" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,130,255,0.48)" />
-        <stop offset="50%" stopColor="rgba(0,100,220,0.18)" />
-        <stop offset="70%" stopColor="rgba(0,100,220,0)" />
+        <stop offset="0%" stopColor="rgba(140,140,140,0.18)" />
+        <stop offset="50%" stopColor="rgba(140,140,140,0.08)" />
+        <stop offset="70%" stopColor="rgba(140,140,140,0)" />
       </radialGradient>
       <radialGradient id="g4" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,190,230,0.38)" />
-        <stop offset="60%" stopColor="rgba(0,160,210,0.12)" />
-        <stop offset="100%" stopColor="rgba(0,160,210,0)" />
+        <stop offset="0%" stopColor="rgba(230,230,230,0.16)" />
+        <stop offset="60%" stopColor="rgba(230,230,230,0.06)" />
+        <stop offset="100%" stopColor="rgba(230,230,230,0)" />
       </radialGradient>
       <radialGradient id="g5" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(160,30,255,0.55)" />
-        <stop offset="45%" stopColor="rgba(130,20,220,0.20)" />
-        <stop offset="70%" stopColor="rgba(130,20,220,0)" />
+        <stop offset="0%" stopColor="rgba(255,255,255,0.22)" />
+        <stop offset="45%" stopColor="rgba(255,255,255,0.09)" />
+        <stop offset="70%" stopColor="rgba(255,255,255,0)" />
       </radialGradient>
       <radialGradient id="g6" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(20,60,255,0.45)" />
-        <stop offset="50%" stopColor="rgba(10,40,200,0.16)" />
-        <stop offset="70%" stopColor="rgba(10,40,200,0)" />
+        <stop offset="0%" stopColor="rgba(130,130,130,0.20)" />
+        <stop offset="50%" stopColor="rgba(130,130,130,0.07)" />
+        <stop offset="70%" stopColor="rgba(130,130,130,0)" />
       </radialGradient>
       <radialGradient id="g7" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(90,30,200,0.40)" />
-        <stop offset="60%" stopColor="rgba(70,20,180,0.14)" />
-        <stop offset="100%" stopColor="rgba(70,20,180,0)" />
+        <stop offset="0%" stopColor="rgba(200,200,200,0.17)" />
+        <stop offset="60%" stopColor="rgba(200,200,200,0.06)" />
+        <stop offset="100%" stopColor="rgba(200,200,200,0)" />
       </radialGradient>
       <radialGradient id="g8" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,170,255,0.38)" />
-        <stop offset="50%" stopColor="rgba(0,130,220,0.13)" />
-        <stop offset="70%" stopColor="rgba(0,130,220,0)" />
+        <stop offset="0%" stopColor="rgba(170,170,170,0.16)" />
+        <stop offset="50%" stopColor="rgba(170,170,170,0.06)" />
+        <stop offset="70%" stopColor="rgba(170,170,170,0)" />
       </radialGradient>
     </defs>
     <ellipse id="glow-1" cx="50"  cy="22"  rx="200" ry="150" fill="url(#g1)" />
@@ -99,7 +99,7 @@
 
   <div style={{
     position: 'absolute', left: 48, top: 52, width: 96, height: 96,
-    borderRadius: 48, background: 'linear-gradient(135deg, #6622ee, #0088ff)',
+    borderRadius: 48, background: 'linear-gradient(135deg, #f2f2f2, #6b6b6b)',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
   }}>
     <img src={github.user.avatarUrl || 'https://github.com/Adityax-07.png'} width={88} height={88} style={{ borderRadius: 44 }} />
@@ -109,7 +109,7 @@
     <div style={{ display: 'flex', fontSize: 38, fontWeight: 800, color: '#ffffff', letterSpacing: '-1px', lineHeight: 1 }}>
       {github.user.name || github.user.login || 'Aditya Bisht'}
     </div>
-    <div style={{ display: 'flex', fontSize: 15, color: 'rgba(180,165,255,0.8)', fontWeight: 400, letterSpacing: '0.3px' }}>
+    <div style={{ display: 'flex', fontSize: 15, color: 'rgba(220,220,220,0.82)', fontWeight: 400, letterSpacing: '0.3px' }}>
       {github.user.bio || 'AI & ML Engineer · RAG Systems · LLM Fine-tuning · Agentic AI'}
     </div>
     <div style={{ display: 'flex', gap: 8, marginTop: 6 }}>
@@ -117,8 +117,8 @@
         return (
           <div key={tag} style={{
             display: 'flex', paddingTop: 4, paddingBottom: 4, paddingLeft: 12, paddingRight: 12, borderRadius: 20,
-            background: 'rgba(80,40,220,0.18)', border: '1px solid rgba(100,70,240,0.32)',
-            color: 'rgba(205,195,255,0.85)', fontSize: 12, fontWeight: 600,
+            background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(230,230,230,0.22)',
+            color: 'rgba(232,232,232,0.90)', fontSize: 12, fontWeight: 600,
           }}>{tag}</div>
         );
       })}
