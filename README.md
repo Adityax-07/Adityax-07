@@ -54,7 +54,7 @@ Oracle Generative AI Professional · Oracle AI Vector Search Professional
 <h2 align="center">GitHub stats</h2>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Adityax-07&amp;theme=github-dark-blue&amp;hide_border=true" alt="Aditya's GitHub contribution streak" height="150" />
+  <img src="https://streak-stats.demolab.com?user=Adityax-07&amp;theme=github-dark-blue&amp;hide_border=true&amp;disable_animations=true" alt="Aditya's GitHub contribution streak" height="150" />
 </p>
 
 <h2 align="center">Contribution trail</h2>
