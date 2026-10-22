@@ -1,3 +1,5 @@
+<p align="center"><img src="./assets/halftone-hands.jpg" alt="Black-and-white halftone hands reaching through a small project window" width="100%" /></p>
+
 ```aura width=860 height=200
 <div style={{
   width: '100%', height: '100%', background: '#08080c',
