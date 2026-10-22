@@ -10,13 +10,15 @@
 
 <h2 align="center">About me</h2>
 
-<p align="center"><img src="./assets/astronaut-original.png" width="160" alt="Original monochrome astronaut illustration" /></p>
+<img align="right" src="./assets/astronaut-wave.gif" width="170" alt="Dotted monochrome astronaut turning and waving" />
 
 I build and evaluate RAG systems, agent workflows, and CLI-native agent skills. My current focus is agentic orchestration and self-hosted LLM inference with vLLM.
 
 I care about measured trade-offs: answer quality, hallucination, latency, cost, and safety. The experiments below are linked to their repositories, not invented dashboard numbers.
 
 Oracle Generative AI Professional · Oracle AI Vector Search Professional
+
+<br clear="right" />
 
 <h2 align="center">Connect</h2>
 
