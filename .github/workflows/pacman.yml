@@ -1,0 +1,63 @@
+name: Generate Pac-Man contribution graph
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate light and dark SVGs
+        uses: abozanona/pacman-contribution-graph@v5.0.0
+        with:
+          github_user_name: Adityax-07
+          games: pacman
+          player_style: opportunistic
+
+      - name: Embed external image references
+        run: |
+          python3 - <<'PY'
+          import base64
+          import glob
+          import mimetypes
+          import re
+          import urllib.request
+
+          for path in glob.glob('dist/*.svg'):
+              with open(path, encoding='utf-8') as source:
+                  svg = source.read()
+
+              def embed(match):
+                  url = match.group(2)
+                  try:
+                      request = urllib.request.Request(url, headers={'User-Agent': 'profile-readme'})
+                      data = urllib.request.urlopen(request, timeout=15).read()
+                      mime = mimetypes.guess_type(url)[0] or 'image/png'
+                      encoded = base64.b64encode(data).decode('ascii')
+                      return f'{match.group(1)}="data:{mime};base64,{encoded}"'
+                  except Exception as error:
+                      print(f'Unable to embed {url}: {error}')
+                      return match.group(0)
+
+              svg = re.sub(r'(xlink:href|href)="(https?://[^\"]+)"', embed, svg)
+              with open(path, 'w', encoding='utf-8') as target:
+                  target.write(svg)
+              print(f'Prepared {path}')
+          PY
+
+      - name: Publish generated SVGs
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

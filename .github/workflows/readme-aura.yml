@@ -22,7 +22,7 @@ jobs:
           node-version: "20"
 
       - name: Build README
-        run: npx readme-aura@latest build -g Adityax-07 -t ${{ secrets.GITHUB_TOKEN }}
+        run: npx readme-aura@1.0.4 build -g Adityax-07 -t ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push
         run: |

@@ -1,0 +1,11 @@
+# Profile design notes
+
+The existing animated `readme-aura` hero is preserved unchanged. Everything below it follows the section rhythm of [midnightshady/midnightshady](https://github.com/midnightshady/midnightshady): compact intro, About, Connect, Tech Stack, work, stats, contribution art, and closing philosophy. A [fork](https://github.com/Adityax-07/midnightshady) is kept as the reference copy.
+
+The reference repository does not provide a reuse license. Its illustrations were **not** copied into this profile. `assets/astronaut-original.png` is an original generated illustration, centered at 160 px so the About text remains usable on mobile. It was generated from the prompt: “A solitary astronaut/software explorer shown waist-up, slightly turned left, rendered as crisp monochrome grayscale pixel-halftone engraving with subtle glitch/dither texture. Transparent background, no scene, frame, text, logos, badges, or watermarks; readable at 200 px wide.”
+
+The project claims link directly to the public repositories. The activity graph from the reference layout was skipped because its endpoint returned HTTP 402 during verification. The remaining GitHub streak widget and icon rows are decorative; their content has text equivalents. Pac-Man light/dark SVGs are generated in this repository's `output` branch by the scheduled workflow. The closing line is static to avoid a random quote service.
+
+The tech icon rows are self-hosted copies generated from [skill-icons](https://github.com/tandpfun/skill-icons) and include its [MIT license](assets/SKILL_ICONS_LICENSE.txt). Remaining external runtime dependencies: `streak-stats.demolab.com` for the streak and GitHub's raw content host for generated Pac-Man SVGs. The workflow uses versioned `abozanona/pacman-contribution-graph@v5.0.0` and `crazy-max/ghaction-github-pages@v5`; the hero renderer is pinned to `readme-aura@1.0.4`. All content remains legible if decorative images fail.
+
+To refresh assets manually: run the **Generate Pac-Man contribution graph** and **readme-aura** workflows in Actions. The source README is `readme.source.md`; edit that file as well as the generated `README.md` when changing prose below the hero.

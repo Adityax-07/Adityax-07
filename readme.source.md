@@ -125,148 +125,73 @@
 </div>
 ```
 
+<h2 align="center">AI systems, measured.</h2>
 
+<p align="center">Applied AI / Prompt Engineering intern · B.Tech IT, MAIT (GGSIPU), 2023–27</p>
 
-```aura width=860 height=340
-<div style={{
-  width: '100%', height: '100%', background: '#08080c',
-  display: 'flex', flexDirection: 'column', fontFamily: 'Inter',
-  position: 'relative', overflow: 'hidden', borderRadius: 16,
-  border: '1px solid rgba(110,80,220,0.28)',
-  paddingTop: 28, paddingLeft: 42, paddingRight: 42
-}}>
-  <style>{`
-    @keyframes stack-drift-a {
-      0%,100% { transform:translate(0px,0px); opacity:0.78; }
-      50% { transform:translate(110px,55px); opacity:1; }
-    }
-    @keyframes stack-drift-b {
-      0%,100% { transform:translate(0px,0px); opacity:0.72; }
-      50% { transform:translate(-115px,65px); opacity:1; }
-    }
-    @keyframes stack-drift-c {
-      0%,100% { transform:translate(0px,0px); opacity:0.72; }
-      50% { transform:translate(75px,-50px); opacity:0.96; }
-    }
-    #stack-glow-1 { animation:stack-drift-a 12s ease-in-out infinite; }
-    #stack-glow-2 { animation:stack-drift-b 14s ease-in-out infinite; }
-    #stack-glow-3 { animation:stack-drift-c 10s ease-in-out infinite; }
-    #stack-glow-4 { animation:stack-drift-b 17s ease-in-out infinite reverse; }
-    @media (prefers-reduced-motion: reduce) {
-      #stack-glow-1, #stack-glow-2, #stack-glow-3, #stack-glow-4 { animation:none; }
-    }
-  `}</style>
+<p align="center"><strong>I benchmark, not just build.</strong></p>
 
-  <svg width="860" height="340" style={{ position: 'absolute', top: 0, left: 0 }}>
-    <defs>
-      <radialGradient id="stack-purple" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(130,25,230,0.68)" />
-        <stop offset="48%" stopColor="rgba(90,15,180,0.28)" />
-        <stop offset="100%" stopColor="rgba(90,15,180,0)" />
-      </radialGradient>
-      <radialGradient id="stack-blue" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(40,70,255,0.58)" />
-        <stop offset="48%" stopColor="rgba(25,55,190,0.25)" />
-        <stop offset="100%" stopColor="rgba(25,55,190,0)" />
-      </radialGradient>
-      <radialGradient id="stack-cyan" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(0,175,225,0.46)" />
-        <stop offset="50%" stopColor="rgba(0,120,210,0.17)" />
-        <stop offset="100%" stopColor="rgba(0,120,210,0)" />
-      </radialGradient>
-    </defs>
-    <ellipse id="stack-glow-1" cx="120" cy="75" rx="260" ry="195" fill="url(#stack-purple)" />
-    <ellipse id="stack-glow-2" cx="740" cy="65" rx="245" ry="185" fill="url(#stack-blue)" />
-    <ellipse id="stack-glow-3" cx="270" cy="305" rx="280" ry="175" fill="url(#stack-cyan)" />
-    <ellipse id="stack-glow-4" cx="725" cy="315" rx="250" ry="170" fill="url(#stack-purple)" />
-  </svg>
+<h2 align="center">About me</h2>
 
-  <div style={{ display: 'flex', fontSize: 12, fontWeight: 700, color: '#c7b5ef', letterSpacing: '2.5px', marginBottom: 16 }}>
-    TECH STACK
-  </div>
+<p align="center"><img src="./assets/astronaut-original.png" width="160" alt="Original monochrome astronaut illustration" /></p>
 
-  <div style={{ display: 'flex', flexDirection: 'column', gap: 9 }}>
-    {[
-      {label:'LANGUAGES', color:'#c99cff', items:['Python','TypeScript','JavaScript']},
-      {label:'AI / ML', color:'#aa9aff', items:['PyTorch','TensorFlow','Hugging Face','scikit-learn']},
-      {label:'LLM / AGENTS', color:'#78baff', items:['LangChain','LangGraph','FAISS','vLLM']},
-      {label:'BUILD / SHIP', color:'#73d7e9', items:['FastAPI','Streamlit','Docker','Git']}
-    ].map(function(group) {
-      return (
-        <div key={group.label} style={{
-          display:'flex', alignItems:'center', height:55, paddingLeft:15, paddingRight:12,
-          borderRadius:10, background:'rgba(8,8,16,0.62)',
-          border:'1px solid rgba(190,165,255,0.18)'
-        }}>
-          <div style={{ display:'flex', alignItems:'center', gap:9, width:145, flexShrink:0 }}>
-            <div style={{ width:7, height:7, borderRadius:4, background:group.color }} />
-            <div style={{ fontSize:13, fontWeight:700, letterSpacing:'1px', color:group.color }}>{group.label}</div>
-          </div>
-          <div style={{ display:'flex', alignItems:'center', gap:8 }}>
-            {group.items.map(function(t) {
-              return (
-                <div key={t} style={{
-                  display:'flex', paddingTop:7, paddingBottom:7, paddingLeft:13, paddingRight:13,
-                  borderRadius:7, background:'rgba(8,8,12,0.82)',
-                  border:'1px solid rgba(205,190,255,0.26)',
-                  color:'#f4f1ff', fontSize:19, fontWeight:600
-                }}>{t}</div>
-              );
-            })}
-          </div>
-        </div>
-      );
-    })}
-  </div>
-</div>
-```
+I build and evaluate RAG systems, agent workflows, and CLI-native agent skills. My current focus is agentic orchestration and self-hosted LLM inference with vLLM.
 
-```aura width=148 height=44
-<div style={{ width:'100%', height:'100%', background:'#08080c', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:22, border:'1px solid rgba(10,102,194,0.45)', gap:8, fontFamily:'Inter' }}>
-  <div style={{ display:'flex', width:8, height:8, borderRadius:4, background:'rgba(10,102,194,0.95)' }} />
-  <div style={{ display:'flex', fontSize:13, fontWeight:700, color:'rgba(100,160,255,0.95)' }}>LinkedIn</div>
-</div>
-```
+I care about measured trade-offs: answer quality, hallucination, latency, cost, and safety. The experiments below are linked to their repositories, not invented dashboard numbers.
 
-```aura width=128 height=44
-<div style={{ width:'100%', height:'100%', background:'#08080c', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:22, border:'1px solid rgba(200,200,200,0.25)', gap:8, fontFamily:'Inter' }}>
-  <div style={{ display:'flex', width:8, height:8, borderRadius:4, background:'rgba(220,220,220,0.85)' }} />
-  <div style={{ display:'flex', fontSize:13, fontWeight:700, color:'rgba(220,220,220,0.92)' }}>GitHub</div>
-</div>
-```
-
-```aura width=158 height=44
-<div style={{ width:'100%', height:'100%', background:'#08080c', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:22, border:'1px solid rgba(255,210,30,0.35)', gap:8, fontFamily:'Inter' }}>
-  <div style={{ display:'flex', width:8, height:8, borderRadius:4, background:'rgba(255,220,60,0.90)' }} />
-  <div style={{ display:'flex', fontSize:13, fontWeight:700, color:'rgba(255,220,70,0.92)' }}>Hugging Face</div>
-</div>
-```
-
-```aura width=110 height=44
-<div style={{ width:'100%', height:'100%', background:'#08080c', display:'flex', alignItems:'center', justifyContent:'center', borderRadius:22, border:'1px solid rgba(234,67,53,0.38)', gap:8, fontFamily:'Inter' }}>
-  <div style={{ display:'flex', width:8, height:8, borderRadius:4, background:'rgba(234,100,90,0.90)' }} />
-  <div style={{ display:'flex', fontSize:13, fontWeight:700, color:'rgba(255,120,110,0.92)' }}>Email</div>
-</div>
-```
-
-## Proof of work
-
-I benchmark, not just build.
-
-- [RAG-Systems-eval-suite](https://github.com/Adityax-07/RAG-Systems-eval-suite) — 8 RAG systems evaluated on 50 questions and 10 metrics; advanced RAG scored 0.770 overall.
-- [AgentBench](https://github.com/Adityax-07/AgentBench) — 50-query evaluation measured 4% hallucination for the multi-agent system versus 24% for a single agent.
-- [LLM-vs-RAG-vs-Fine-Tuning-](https://github.com/Adityax-07/LLM-vs-RAG-vs-Fine-Tuning-) — compared 3 systems across 50 questions and 8 metrics.
-- [RAG_SECURITY_DEMO](https://github.com/Adityax-07/RAG_SECURITY_DEMO) — tested a secure RAG pipeline with 100 labeled queries across 8 categories.
-
-## Currently
-
-- Building CLI-native agent skills and repeatable orchestration.
-- Learning vLLM serving and self-hosted inference.
-- Benchmarking RAG and agent trade-offs across accuracy, latency, cost, and safety.
-
-## Background
-
-B.Tech IT at MAIT, GGSIPU (2023–27) · Applied AI / Prompt Engineering intern<br>
 Oracle Generative AI Professional · Oracle AI Vector Search Professional
 
-[Projects](https://github.com/Adityax-07?tab=repositories) · [LinkedIn](https://www.linkedin.com/in/aditya-bisht-82211b327/) · [Email](mailto:aaditya85677@gmail.com)
+<h2 align="center">Connect</h2>
+
+<p align="center">
+  <a href="https://github.com/Adityax-07?tab=repositories">GitHub projects</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/aditya-bisht-82211b327/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:aaditya85677@gmail.com">Email</a>
+</p>
+
+<h2 align="center">Tech stack</h2>
+
+<p align="center"><strong>Languages &amp; app development</strong><br />Python · TypeScript · JavaScript · FastAPI · Streamlit</p>
+
+<p align="center">
+  <img src="./assets/stack-languages.svg" alt="Python, TypeScript, JavaScript, and FastAPI icons" height="42" />
+</p>
+
+<p align="center"><strong>AI &amp; inference</strong><br />PyTorch · TensorFlow · scikit-learn · Hugging Face · LangChain · LangGraph · FAISS · vLLM</p>
+
+<p align="center">
+  <img src="./assets/stack-ai.svg" alt="PyTorch, TensorFlow, and scikit-learn icons" height="42" />
+</p>
+
+<p align="center"><strong>Tools</strong><br />Docker · Git · GitHub · VS Code</p>
+
+<p align="center">
+  <img src="./assets/stack-tools.svg" alt="Docker, Git, GitHub, and VS Code icons" height="42" />
+</p>
+
+<h2 align="center">Selected work</h2>
+
+- [RAG-Systems-eval-suite](https://github.com/Adityax-07/RAG-Systems-eval-suite) — 8 RAG systems, 50 questions, 10 metrics; advanced RAG scored 0.770 overall.
+- [AgentBench](https://github.com/Adityax-07/AgentBench) — 50-query evaluation; 4% hallucination for the multi-agent system versus 24% for a single agent.
+- [LLM-vs-RAG-vs-Fine-Tuning-](https://github.com/Adityax-07/LLM-vs-RAG-vs-Fine-Tuning-) — compared 3 systems across 50 questions and 8 metrics.
+- [RAG_SECURITY_DEMO](https://github.com/Adityax-07/RAG_SECURITY_DEMO) — secure RAG pipeline tested with 100 labeled queries across 8 categories.
+
+<h2 align="center">GitHub stats</h2>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Adityax-07&amp;theme=github-dark-blue&amp;hide_border=true" alt="Aditya's GitHub contribution streak" height="150" />
+</p>
+
+<h2 align="center">Contribution trail</h2>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Adityax-07/Adityax-07/output/pacman-contribution-graph-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Adityax-07/Adityax-07/output/pacman-contribution-graph.svg" />
+    <img src="https://raw.githubusercontent.com/Adityax-07/Adityax-07/output/pacman-contribution-graph.svg" alt="Pac-Man animation crossing Aditya's contribution graph" />
+  </picture>
+</p>
+
+<h2 align="center">Philosophy</h2>
+
+<p align="center"><em>Build the system. Measure the result. Publish the trade-off.</em></p>
